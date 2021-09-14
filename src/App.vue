@@ -37,7 +37,7 @@ export default {
   methods: {
     async getEmployees() {
       try {
-        const response = await fetch('https://jsonplaceholder.typicode.com/users')
+        const response = await fetch('https://github.com/l0x3el/vue-tutorial/blob/main/public/users')
         const data = await response.json()
         this.employees = data
       } catch (error) {
@@ -47,7 +47,7 @@ export default {
 
     async addEmployee(employee) {
       try {
-        const response = await fetch('https://jsonplaceholder.typicode.com/users', {
+        const response = await fetch('https://github.com/l0x3el/vue-tutorial/blob/main/public/users', {
           method: 'POST',
           body: JSON.stringify(employee),
           headers: { "Content-type": "application/json; charset=UTF-8" }
@@ -61,7 +61,7 @@ export default {
 
     async editEmployee(id, updatedEmployee) {
       try {
-        const response = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`, {
+        const response = await fetch(`https://github.com/l0x3el/vue-tutorial/blob/main/public/users/${id}`, {
           method: 'PUT',
           body: JSON.stringify(updatedEmployee),
           headers: { "Content-type": "application/json; charset=UTF-8" }
@@ -75,7 +75,7 @@ export default {
 
     async deleteEmployee(id) {
       try {
-        await fetch(`https://jsonplaceholder.typicode.com/users/${id}`, {
+        await fetch(`https://github.com/l0x3el/vue-tutorial/blob/main/public/users/${id}`, {
           method: 'DELETE'
         })
         this.employees = this.employees.filter(employee => employee.id !== id)
