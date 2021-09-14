@@ -2,7 +2,7 @@
   <div id="employee-form">
     <form @submit.prevent="handleSubmit">
 
-      <label>Employee name</label>
+      <label>従業員名</label>
       <input
         ref="first"
         type="text"
@@ -11,7 +11,7 @@
         @focus="clearStatus"
         @keypress="clearStatus"
       >
-      <label>Employee Email</label>
+      <label>従業員メールアドレス</label>
       <input
         type="text"
         :class="{ 'has-error': submitting && invalidEmail }"
