@@ -37,7 +37,7 @@ export default {
   methods: {
     async getEmployees() {
       try {
-        const response = await fetch('https://github.com/l0x3el/vue-tutorial/blob/main/public/users')
+        const response = await fetch('https://www.dropbox.com/s/ak6kp908jl730hs/users.json?dl=0&raw=true')
         const data = await response.json()
         this.employees = data
       } catch (error) {
@@ -47,7 +47,7 @@ export default {
 
     async addEmployee(employee) {
       try {
-        const response = await fetch('https://github.com/l0x3el/vue-tutorial/blob/main/public/users', {
+        const response = await fetch('https://www.dropbox.com/s/ak6kp908jl730hs/users.json?dl=0&raw=true', {
           method: 'POST',
           body: JSON.stringify(employee),
           headers: { "Content-type": "application/json; charset=UTF-8" }
