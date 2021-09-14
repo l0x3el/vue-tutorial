@@ -21,12 +21,12 @@
       <p
         v-if="error && submitting"
         class="error-message"
-      >❗Please fill out all required fields</p>
+      >❗すべての項目を埋めてください</p>
       <p
         v-if="success"
         class="success-message"
-      >✅ Employee successfully added</p>
-      <button>Add Employee</button>
+      >✅ 追加が完了しました</p>
+      <button>従業員の追加</button>
     </form>
 
   </div>
