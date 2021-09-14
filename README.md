@@ -5,7 +5,7 @@ We're going to create a small application with Vue.
 ### [Read the tutorial](https://taniarascia.com/getting-started-with-vue) | [View the demo](https://taniarascia.github.io/vue-tutorial)
 
 ## Purpose
-
+# 
 The app will be a simple employee database and we'll learn:
 
 - How to set up Vue
