@@ -61,7 +61,7 @@ export default {
 
     async editEmployee(id, updatedEmployee) {
       try {
-        const response = await fetch(`https://github.com/l0x3el/vue-tutorial/blob/main/public/users/${id}`, {
+        const response = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`, {
           method: 'PUT',
           body: JSON.stringify(updatedEmployee),
           headers: { "Content-type": "application/json; charset=UTF-8" }
@@ -75,7 +75,7 @@ export default {
 
     async deleteEmployee(id) {
       try {
-        await fetch(`https://github.com/l0x3el/vue-tutorial/blob/main/public/users/${id}`, {
+        await fetch(`https://jsonplaceholder.typicode.com/users/${id}`, {
           method: 'DELETE'
         })
         this.employees = this.employees.filter(employee => employee.id !== id)
