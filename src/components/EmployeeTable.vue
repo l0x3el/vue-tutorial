@@ -34,7 +34,7 @@
           </td>
           <td v-else>{{employee.email}}</td>
           <td v-if="editing === employee.id">
-            <button @click="editEmployee(employee)">Save</button>
+            <button @click="editEmployee(employee)">保存</button>
             <button
               class="muted-button"
               @click="cancelEdit(employee)"
@@ -42,7 +42,7 @@
           </td>
           <td v-else>
             <button @click="editMode(employee)">Edit</button>
-            <button @click="$emit('delete:employee', employee.id)">Delete</button>
+            <button @click="$emit('delete:employee', employee.id)">削除</button>
           </td>
 
         </tr>
